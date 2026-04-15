@@ -10,14 +10,13 @@
 <body>
     <div id="balance-line">
       <div id="balance">
-        <h1 id="balance-text">Balance:</h1>
-        <h1 id="balance-num">3600000000000000</h1>
-        <h1>$</h1>
+        <br>
+        <h1 id="balance-text">Welcome</h1>
       </div>
 
       <div id="profil_div">
         <img id="profil-icon" src="{% static 'Design_elements/profile_image.png' %}" alt="picture error">
-
+  
         {% if user.is_authenticated %}
           <h1 id="username">{{ user.username }}</h1>
         {% endif %}
