@@ -1,113 +1,120 @@
-# TLC
-### Collaboration Note:
-All changes, updates, and improvements to this project are made together during personal meetings or online calls via Microsoft Teams.
-This means that every part of the development — including code, design, documentation, and updates — is the result of equal collaboration (50/50 work) between both project creators.
-It does not matter who commits or uploads the changes; all work is done jointly.
+# TLC — Three-Level Connect
 
-## TLC — The Loin Coin
-
-TLC (The Loin Coin) is a web-based crypto simulation platform built with Python (Django).
-It allows users to explore how a cryptocurrency website works — including balance management, buying and selling a fictional coin, and viewing live graph updates that react to simulated market activity.
-
-A visual concept sketch of the website design is included in the repository.
-The design will evolve during development as the project improves.
-
-## Project Description
-
-TLC is an educational and experimental crypto project created to simulate a functioning cryptocurrency environment in a safe and controlled way.
-Users can:
-
-View information about the project and its creators
-
-Deposit and withdraw funds (simulated)
-
-Buy and sell the TLC coin — all transactions are artificial
-
-See a dynamic price graph that changes depending on buy/sell activity
-
-This simulation provides an engaging way to learn about the logic behind trading systems and web development.
-
-| Technology          | Purpose                                              |
-| ------------------- | ---------------------------------------------------- |
-| **Python (Django)** | Backend logic and routing                            |
-| **HTML**            | Page structure                                       |
-| **CSS**             | Styling and visual layout                            |
-| **JavaScript**      | Interactivity and dynamic updates                    |
-| **SQLite**          | Local database for storing user and transaction data |
-| **VS Code**         | Development environment                              |
-
-## Features
-
-Simulated Wallet System — Users can top up and see balance changes.
-
-Buy & Sell TLC Coin — Fully artificial, for educational demonstration.
-
-Dynamic Graph — The coin’s price graph rises or falls based on user transactions.
-
-Project Info Section — Explains how TLC was built and the technologies behind it.
-
-Responsive Design — Optimized for different screen sizes.
-
-## Project Structure
-### 📂 Project Structure
-
-```text
-TLC-CRYPTOCURRENCY/
-│
-├── Design_elements/                # Design assets and visual elements
-│   ├── TLC_animation.mp4           # Animation for presentation/demo
-│   └── TLC_design.png              # UI design reference
-│
-├── env/                            # Virtual environment (excluded from version control)
-│
-├── TLCapp/                         # Main Django application
-│   ├── migrations/                 # Database migration files
-│   ├── static/                     # Static files (CSS, JS)
-│   │   └── css/                    # Styling for frontend pages
-│   │       ├── home.css
-│   │       ├── main.css
-│   │       └── singup_in.css
-│   ├── templates/                  # HTML templates for the app
-│   │   ├── home.html
-│   │   ├── main.html
-│   │   ├── singin.html
-│   │   └── singup.html
-│   ├── __init__.py                 # Marks the folder as a Python package
-│   ├── admin.py                    # Django admin panel configuration
-│   ├── apps.py                     # Application configuration
-│   ├── forms.py                    # User forms (login, signup)
-│   ├── models.py                   # Database models (User, Wallet, Transaction)
-│   ├── tests.py                    # Unit and integration tests
-│   ├── urls.py                     # URL routing for the app
-│   └── views.py                    # View logic and request handling
-│
-├── TLCproject/                     # Django project configuration
-│   ├── __init__.py
-│   ├── asgi.py                     # ASGI entry point (async support)
-│   ├── settings.py                 # Global Django settings
-│   ├── urls.py                     # Root project URLs
-│   └── wsgi.py                     # WSGI entry point (deployment)
-│
-├── db.sqlite3                      # Local SQLite database
-├── manage.py                       # Django management script (runserver, migrate, etc.)
-├── LICENSE                         # Project license information
-└── README.md                       # Project documentation
-
-```
-
-## Sketch
-<img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/e7d1631d-9166-4b30-9414-1b55e7280d48" />
-
-## Future Improvements
-
-User authentication system
-
-Enhanced visual design and animations
+TLC now stands for Three-Level Connect — representing the three core stages of user interaction: Registration → Authentication → Access.
 
 ## About the Project
 
-TLC — The Loin Coin — was created as a creative and educational project to understand cryptocurrency logic, user interface design, and full-stack web development.
-The website is a fictional simulation meant for learning and demonstration purposes only.
+TLC (Three-Level Connect) is a Django-based web application built to practice and demonstrate a complete user authentication system.
 
-TLC — The Loin Coin — was created as a creative and educational project to understand cryptocurrency logic, user interface design, and full-stack web development.
-The website is a fictional simulation meant for learning and demonstration purposes only.
+The project focuses on implementing:
+
+User registration
+User login
+User-specific dashboard access
+Admin-side data persistence and management
+
+This project is designed as a learning and demonstration tool, showing how authentication systems work in real-world web applications.
+
+## Purpose
+
+The main goal of this project is to:
+
+Practice backend development with Django
+Understand authentication flows
+Work with user data storage
+Build a clean and responsive frontend UI
+
+## Tech Stack
+
+Technology	Purpose
+
+Python (Django)	Backend logic & authentication
+
+HTML	Structure of pages
+
+CSS	Styling and UI design
+
+JavaScript	Interactivity
+
+SQLite	Database (user storage)
+
+VS Code	Development environment
+
+## Screenshots
+
+### Landing Page (Before Login)
+
+<img width="1883" height="875" alt="image" src="https://github.com/user-attachments/assets/0f8e2ef7-b55c-4045-b168-156ba611a34a" />
+
+<img width="1908" height="852" alt="image" src="https://github.com/user-attachments/assets/209e1066-2f9f-4a10-a384-a38541779eee" />
+
+- Entry point of the application
+
+- Options to Sign Up, Sign In or GitHub reporitory
+
+- Custom animation included
+
+---
+
+### Registration Page
+
+<img width="1907" height="866" alt="image" src="https://github.com/user-attachments/assets/31cb2278-0bf3-461d-a3b2-eebebdb5d158" />
+
+- Users create an account
+
+- Data is saved into the database
+
+---
+
+### Login Page
+
+<img width="1908" height="868" alt="image" src="https://github.com/user-attachments/assets/cec7d691-de0e-4b70-9eac-63669d32c647" />
+
+
+- Existing users authenticate
+
+- Credentials are verified
+
+---
+
+### Main Page (After Login)
+
+<img width="1500" height="733" alt="image" src="https://github.com/user-attachments/assets/6d32a402-af10-427d-ae2a-3d46b0a5ef76" />
+
+- Displays username dynamically
+
+- Accessible only after login
+
+---
+
+### Admin Panel (Database View)
+
+<img width="1908" height="863" alt="image" src="https://github.com/user-attachments/assets/37a8860e-d099-4bc8-a294-eb3f605374d6" />
+
+- Shows stored users
+
+- Confirms real data persistence
+
+Managed via Django Admin
+
+## Project Structure
+
+<img width="600" height="1019" alt="image" src="https://github.com/user-attachments/assets/11c2dae3-9e3f-4c78-8541-eadfdda538d9" />
+
+##  Application Flow
+
+1. User opens landing page
+
+2. Chooses:
+
+  Sign Up → creates account
+  
+  Sign In → logs into existing account
+  
+3. After login → redirected to main page
+4. Username is displayed
+5. Admin can view stored users in Django Admin
+
+## License
+
+This project is for educational purposes only.
